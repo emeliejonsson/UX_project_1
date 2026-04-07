@@ -1,0 +1,43 @@
+.header-menu {
+    font-family: Inter;
+    background-color: #D6D5D2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.logo-container h1 {
+    margin-top: 1.7rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 4rem;
+    padding-right: 3rem;
+    font-size: 16px;
+}
+
+.buttons a {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buttons a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#new-booking {
+    color: black;
+    text-decoration: underline;
+}
