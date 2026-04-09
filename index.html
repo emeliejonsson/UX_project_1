@@ -27,8 +27,92 @@
             <a href="test.html">TRAFIKINFO</a>
         </div>
     </nav>
-    <div class="main-container">
-    </div>
+    <main id="main-content">
+
+        <!-- Left side form -->
+        <div id="form-container">
+            <div id="customer-information-container">
+                <h2>Kundinformation</h2>
+                <label for="firstName">Förnamn</label>
+                <input type="text" id="firstName" name="förnamn" placeholder="Erik">
+                <label for="surname">Efternamn</label>
+                <input type="text" id="surname" name="efternamn" placeholder="Lundgren">
+
+                <label for="phoneNumber">Telefonnummer</label>
+                <input type="text" id="phone" name="telefonnummer" placeholder="+46733487677">
+                <label for="ovrigt">Övrigt</label>
+                <input type="text" id="ovrigt">
+            </div>
+
+            <div id="travel-information-container">
+                <h2>Reseinformation</h2>
+
+                <div id="from-to-container">
+                    <div id="from-to-icon-container">
+                        <img id="start-icon" class="from-to-icon" src="assets/start_pin_icon.png" alt="Start pin icon">
+                        <img id="arrows-icon" class="from-to-icon" src="assets/two_arrows_icon.png" alt="Arrows icon">
+                        <img id="end-icon" class="from-to-icon" src="assets/end_pin_icon.png" alt="End pin icon">
+                        <img id="stop-icon" class="from-to-icon" src="assets/stop_pin_icon.png" alt="Stop pin icon">
+                    </div>
+
+                    <div id="from-to-input-container">
+                        <label for="from"></label>
+                        <input type="text" id="from" name="from" placeholder="Från">
+
+                        <label for="to"></label>
+                        <input type="text" id="to" name="to" placeholder="Till">
+
+                        <label for="stop"></label>
+                        <input type="text" id="stop" name="stop" placeholder="Lägg till stopp">
+                    </div>
+                </div>
+
+                <div id="select-container">
+                <label for="num-of-customers"></label>
+                <select name="num-of-customers" id="numOfCustomers">
+                    <option value="" disabled selected>Antal</option>
+                    <option value="1">1-4</option>
+                    <option value="2">5-8</option>
+                </select>
+
+                <label for="car-type"></label>
+                <select name="car-type" id="car-type">
+                    <option value="" disabled selected>Biltyp</option>
+                    <option value="minibuss">Minibuss</option>
+                    <option value="elbil">Elbil</option>
+                    <option value="limousine">Limousine</option>
+                </select>
+                </div>
+
+                <h5>Tillval/sortering</h5>
+                <div id="icon-button-container">
+                    <img class="icon-button" src="assets/suitcase_bold_icon.png" alt="Suitcase icon button">
+                    <img class="icon-button" src="assets/baby_icon.png" alt="Baby icon button">
+                    <img class="icon-button" src="assets/paw_icon.png" alt="Paw icon button">
+                    <img class="icon-button" src="assets/wheelchair_icon.png" alt="Wheel chair icon button">
+                </div>
+
+            </div>
+
+            <div id="form-container-buttons">
+                <button id="clear-button">Rensa</button>
+                <button id="done-button">Klar</button>
+            </div>
+
+        </div>
+
+        <!-- Image of the map -->
+        <div id="map-container">
+            <img src="assets/map_img.png" alt="Image of Google map" width="485px" height="898px">
+        </div>
+
+        <!-- Available cars  -->
+        <div id="available-cars-container">
+            <h2>Tillgängliga bilar</h2>
+        </div>
+
+
+    </main>
 
 </body>
 
