@@ -1,10 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1440px;
+    height: 1024px;
+}
+
 /* Navigation menu */
 
 .header-menu {
+    height: 84px;
+    width: 1440px;
     font-family: Inter;
     background-color: #D6D5D2;
     display: flex;
-    justify-content: space-between; /* iNTE DET HÄR. CHANGE! */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -49,60 +61,78 @@
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    justify-content: space-evenly;
     font-family: Inter;
 }
 
 #main-content h2 {
     font-size: 18px;
-    margin-bottom: 1rem;
 }
 
 /* Kundinformation div */
 #customer-information-container {
     height: 365px;
     width: 423px;
-    margin-top: 1rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     background-color: #F1F1F1;
     border-radius: 2%;
+    gap: 0.75rem;
+    font-size: 14px;
     padding: 0.5rem;
-    gap: 0.5rem;
+}
+
+#customer-information-container text {
+    font-size: 14px;
 }
 
 #customer-information-container input {
     border: none;
     height: 44px;
     width: 403px;
-    border-radius: 2%;
+    border-radius: 3%;
+    font-size: 20px;
+    padding-right: 1rem;
+}
+
+input::placeholder {
+    padding-left: 0.5rem;
 }
 
 /* Reseinformation div */
 #travel-information-container {
     height: 442.73px;
     width: 423px;
-    margin-top: 1rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     background-color: #F1F1F1;
-    border-radius: 2%;
+    border-radius: 3%;
     padding: 0.5rem;
-    gap: 0.5rem;
+    padding-bottom: 0rem;
+}
+
+#travel-information-container h2 {
+    padding-bottom: 1rem;
 }
 
 #travel-information-container input {
     border: none;
     width: 366px;
     height: 44px;
-    border-radius: 2%;
+    border-radius: 3%;
+    padding-right: 0.5rem;
 }
 
 #select-container select {
     border: none;
-    width: 403px;
+    width: 417px;
     height: 44px;
-    border-radius: 2%;
+    border-radius: 3%;
+}
+
+#num-of-customers {
+    margin-bottom: 1rem;
 }
 
 #start-icon,
@@ -117,27 +147,53 @@
     height: 15px;
 }
 
+/* From-to container - Travel info container */
 #from-to-container {
     display: flex;
+    flex-direction: column;
+}
+
+#from-container,
+#arrow-container,
+#to-container,
+#stop-container {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-#from-to-icon-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+#to-container,
+#stop-container {
+    padding-bottom: 1rem;
+
 }
 
-#from-to-input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+/* Tillval/sortering container - Travel info container */
+#travel-information-container h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 14px;
 }
 
+/* Icons & texts -container */
 #icon-button-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+/* Tillval/sortering: icon + text */
+.filter-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-container p {
+    margin: 0;
+    padding: 0;
+    font-size: 11.32px;
+    font-weight: bold;
 }
 
 .icon-button {
@@ -147,20 +203,55 @@
     padding: 0;
     border: 1px solid black;
     border-radius: 10%;
+    opacity: 50%;
 }
 
+.icon-button:hover {
+    opacity: 100%;
+}
+
+/* Clear/Done buttons container. */
 #form-container-buttons button {
     width: 155.93px;
     height: 49.5px;
     border-radius: 40%;
     font-size: 20px;
     border-radius: 8px;
+    font-weight: bold;
+    font-family: Inter;
+    color: #534F4F;
+}
 
+#form-container-buttons button:hover {
+    box-shadow: 2px 5px 5px#a7a5a5;
 }
 
 #form-container-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 5px;
+}
+
+#clear-button {
+    border-color: #DC2222;
+    border-width: 0.82px;
+}
+
+#done-button {
+    border-color: #A3D4AC;
+    border-width: 0.82px;
+}
+
+/* Map */
+
+#map-container {
+    margin-top: 0.5rem;
+}
+
+/* Available cars */
+
+#pickup-icon triangle {
+    font-size: 10px;
+    margin-left: 2px;
 }

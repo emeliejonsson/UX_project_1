@@ -48,56 +48,77 @@
                 <h2>Reseinformation</h2>
 
                 <div id="from-to-container">
-                    <div id="from-to-icon-container">
-                        <img id="start-icon" class="from-to-icon" src="assets/start_pin_icon.png" alt="Start pin icon">
-                        <img id="arrows-icon" class="from-to-icon" src="assets/two_arrows_icon.png" alt="Arrows icon">
-                        <img id="end-icon" class="from-to-icon" src="assets/end_pin_icon.png" alt="End pin icon">
-                        <img id="stop-icon" class="from-to-icon" src="assets/stop_pin_icon.png" alt="Stop pin icon">
-                    </div>
 
-                    <div id="from-to-input-container">
+                    <div id="from-container">
+                        <img id="start-icon" class="from-to-icon" src="assets/start_pin_icon.png" alt="Start pin icon">
                         <label for="from"></label>
                         <input type="text" id="from" name="from" placeholder="Från">
+                    </div>
 
+                    <div id="arrow-container">
+                        <img id="arrows-icon" class="from-to-icon" src="assets/two_arrows_icon.png" alt="Arrows icon">
+                        <p></p>
+                    </div>
+
+                    <div id="to-container">
+                        <img id="end-icon" class="from-to-icon" src="assets/end_pin_icon.png" alt="End pin icon">
                         <label for="to"></label>
                         <input type="text" id="to" name="to" placeholder="Till">
+                    </div>
 
+                    <div id="stop-container">
+                        <img id="stop-icon" class="from-to-icon" src="assets/stop_pin_icon.png" alt="Stop pin icon">
                         <label for="stop"></label>
                         <input type="text" id="stop" name="stop" placeholder="Lägg till stopp">
                     </div>
                 </div>
 
                 <div id="select-container">
-                <label for="num-of-customers"></label>
-                <select name="num-of-customers" id="numOfCustomers">
-                    <option value="" disabled selected>Antal</option>
-                    <option value="1">1-4</option>
-                    <option value="2">5-8</option>
-                </select>
+                    <label for="num-of-customers"></label>
+                    <select name="num-of-customers" id="num-of-customers">
+                        <option value="" disabled selected>&nbsp;&nbsp;Antal</option>
+                        <option value="1">&nbsp;&nbsp;1-4</option>
+                        <option value="2">&nbsp;&nbsp;5-8</option>
+                    </select>
 
-                <label for="car-type"></label>
-                <select name="car-type" id="car-type">
-                    <option value="" disabled selected>Biltyp</option>
-                    <option value="minibuss">Minibuss</option>
-                    <option value="elbil">Elbil</option>
-                    <option value="limousine">Limousine</option>
-                </select>
+                    <label for="car-type"></label>
+                    <select name="car-type" id="car-type">
+                        <option value="biltyp">&nbsp;&nbsp;Biltyp</option>
+                        <option value="minibuss">&nbsp;&nbsp;Minibuss</option>
+                        <option value="elbil">&nbsp;&nbsp;Elbil</option>
+                        <option value="limousine">&nbsp;&nbsp;Limousine</option>
+                    </select>
                 </div>
 
-                <h5>Tillval/sortering</h5>
+                <h3>Tillval/sortering</h3>
                 <div id="icon-button-container">
-                    <img class="icon-button" src="assets/suitcase_bold_icon.png" alt="Suitcase icon button">
-                    <img class="icon-button" src="assets/baby_icon.png" alt="Baby icon button">
-                    <img class="icon-button" src="assets/paw_icon.png" alt="Paw icon button">
-                    <img class="icon-button" src="assets/wheelchair_icon.png" alt="Wheel chair icon button">
-                </div>
 
+                    <div class="filter-container">
+                        <img class="icon-button" src="assets/suitcase_bold_icon.png" alt="Suitcase icon button">
+                        <p>Bagage</p>
+                    </div>
+                    <div class="filter-container"><img class="icon-button" src="assets/baby_icon.png"
+                            alt="Baby icon button">
+                        <p>Barn</p>
+                    </div>
+                    <div class="filter-container">
+                        <img class="icon-button" src="assets/paw_icon.png" alt="Paw icon button">
+                        <p>Husdjur</p>
+                    </div>
+                    <div class="filter-container">
+                        <img class="icon-button" src="assets/wheelchair_icon.png" alt="Wheel chair icon button">
+                        <p>Rullstol</p>
+                    </div>
+                </div>
             </div>
 
             <div id="form-container-buttons">
                 <button id="clear-button">Rensa</button>
                 <button id="done-button">Klar</button>
             </div>
+        </div>
+
+
 
         </div>
 
@@ -109,7 +130,17 @@
         <!-- Available cars  -->
         <div id="available-cars-container">
             <h2>Tillgängliga bilar</h2>
-        </div>
+            <div id="pick up dropdown">
+                <h2 id="pick up-title">
+                    Tid till upphämtning
+                    <span id="pick up-icon triangle">&#9660</span>
+                </h2>
+                <div id="pick up-content">
+
+
+
+
+                </div>
 
 
     </main>
