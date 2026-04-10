@@ -124,23 +124,144 @@
 
         <!-- Image of the map -->
         <div id="map-container">
-            <img src="assets/map_img.png" alt="Image of Google map" width="485px" height="898px">
+            <img src="assets/map_img.png" alt="Image of Google map" width="550px" height="973px">
         </div>
 
-        <!-- Available cars  -->
+
+        <!-- Available cars section -->
         <div id="available-cars-container">
-            <h2>Tillgängliga bilar</h2>
-            <div id="pick up dropdown">
-                <h2 id="pick up-title">
-                    Tid till upphämtning
-                    <span id="pick up-icon triangle">&#9660</span>
-                </h2>
-                <div id="pick up-content">
 
+            <div id="available-cars-header-container">
 
-
-
+                <div id="choice-and-availability">
+                    <div>
+                        <h2>Tillgängliga bilar</h2>
+                    </div>
+                    <div>
+                        <img id="available-cars-paw-icon" src="assets/paw_icon.png" alt="Baby icon">
+                        <img id="available-cars-wheelchair-icon" src="assets/wheelchair_icon.png" alt="Baby icon">
+                        <img id="available-cars-baby-icon" src="assets/baby_icon.png" alt="Baby icon">
+                        <img id="available-cars-suitcase-icon" src="assets/suitcase_bold_icon.png" alt="Baby icon">
+                    </div>
                 </div>
+
+                <div id="sort-and-dropdown">
+                    <div>
+                        <p>Sortera efter:</p>
+                    </div>
+
+                    <div>
+                        <!-- sortering dropdown menu -->
+                        <select>
+                            <option>Tid till upphämtning</option>
+                            <option>Pris</option>
+                            <option>Blabla</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="available-cars-body-container">
+
+                <div class="available-car" id="available-car-five">
+                    <div>
+                        <img src="assets/orange_dot.png" id="orange_dot" alt="Image of a orange dot">
+                        <p id="ready">Redo om: 15</p>
+                        <p id="pickup">Min till upphämtning: ~ 19</p>
+                        <img src="assets/person_icon.png" id="person" alt="Image of a drawing of a person">
+                        <p id="driver">Sonja Gillison</p>
+                        <p id="break">Tid till avbrott: 02 h 30 min</p>
+                        <p id="car">Bil: 113</p>
+                        <img src="assets/suitcase_bold_icon.png" class="icon" alt="Suitcase icon">
+                        <img src="assets/baby_icon.png" class="icon" alt="Baby icon">
+                        <img src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                        <img src="assets/wheelchair_icon.png" class="icon" alt="Wheel chair icon">
+                        <p id="seat">6 säten</p>
+                        <button id="" choose>Välj</button>
+                        <button id="call">Anropa</button>
+                    </div>
+                </div>
+
+                <div class="available-car" id="available-car-one">
+                    <div>
+                        <img src="assets/green_dot.png" id="green_dot" alt="Image of a green dot">
+                        <p>Redo om: nu</p>
+                        <p>Min till upphämtning: ~ 5</p>
+                        <img src="assets/person_icon.png" alt="Image of a drawing of a person">
+                        <p>Amer Nilsson</p>
+                        <p>Tid till avbrott: 01 h 20 min</p>
+                        <p>Bil: 217</p>
+                        <img src="assets/suitcase_bold_icon.png" class="icon" alt="Suitcase icon">
+                        <img src="assets/baby_icon.png" class="icon" alt="Baby icon">
+                        <img src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                        <img src="assets/wheelchair_icon.png" class="icon" alt="Wheel chair icon">
+                        <p>4 säten</p>
+                        <button>Välj</button>
+                        <button>Anropa</button>
+                    </div>
+                </div>
+
+                <div class="available-car" id="available-car-two">
+                    <div>
+                        <img src="assets/green_dot.png" id="green_dot" alt="Image of a green dot">
+                        <p>Redo om: nu</p>
+                        <p>Min till upphämtning: ~ 7</p>
+                        <img src="assets/person_icon.png" alt="Image of a drawing of a person">
+                        <p>Anna Wilsson</p>
+                        <p>Tid till avbrott: 00 h 35 min</p>
+                        <p>Bil: 156</p>
+                        <img src="assets/suitcase_bold_icon.png" class="icon" alt="Suitcase icon">
+                        <img src="assets/baby_icon.png" class="icon" alt="Baby icon">
+                        <img src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                        <img src="assets/wheelchair_icon.png" class="icon" alt="Wheel chair icon">
+                        <p>4 säten</p>
+                        <button>Välj</button>
+                        <button>Anropa</button>
+                    </div>
+                </div>
+
+                <div class="available-car" id="available-car-three">
+                    <div>
+                        <img src="assets/green_dot.png" id="green_dot" alt="Image of a green dot">
+                        <p>Redo om: 5</p>
+                        <p>Min till upphämtning: ~ 11</p>
+                        <img src="assets/person_icon.png" alt="Image of a drawing of a person">
+                        <p>John Killson</p>
+                        <p>Tid till avbrott: 01 h 40 min</p>
+                        <p>Bil: 027</p>
+                        <img src="assets/suitcase_bold_icon.png" class="icon" alt="Suitcase icon">
+                        <img src="assets/baby_icon.png" class="icon" alt="Baby icon">
+                        <img src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                        <img src="assets/wheelchair_icon.png" class="icon" alt="Wheel chair icon">
+                        <p>6 säten</p>
+                        <button>Välj</button>
+                        <button>Anropa</button>
+                    </div>
+                </div>
+
+                <div class="available-car" id="available-car-four">
+                    <div>
+                        <img src="assets/red_dot.png" id="red_dot" alt="Image of a red dot">
+                        <p>Redo om: 7</p>
+                        <p>Min till upphämtning: ~ 16</p>
+                        <img src="assets/person_icon.png" alt="Image of a drawing of a person">
+                        <p>Konny Hilson</p>
+                        <p>Tid till avbrott: 00 h 15 min</p>
+                        <p>Bil: 167</p>
+                        <img src="assets/suitcase_bold_icon.png" class="icon" alt="Suitcase icon">
+                        <img src="assets/baby_icon.png" class="icon" alt="Baby icon">
+                        <img src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                        <img src="assets/wheelchair_icon.png" class="icon" alt="Wheel chair icon">
+                        <p>4 säten</p>
+                        <button>Välj</button>
+                        <button>Anropa</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
 
     </main>
