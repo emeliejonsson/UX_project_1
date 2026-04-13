@@ -314,49 +314,57 @@ input::placeholder {
     opacity: 0%;
 }
 
-#orange_dot {
-    background-color: green;
+.available-car {
+    border-width: thin;
+    border-color: #534F4F;
+    border-style:solid;
+    border-radius: 2%;
 }
 
-#ready {
-    background-color: yellow;
+.top-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0.5rem;
 }
 
-#pickup {
-    background-color: blue;
+.second-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0.5rem;
 }
 
-#person {
-    background-color: hotpink;
+.third-row {
+    display: flex;
+    gap: 10px;
+    margin: 0.5rem;
 }
 
-#driver {
-    background-color: aquamarine;
-}
-
-#break {
-    background-color: red;
-}
-
-#car {
-    background-color: #F1F1F1
-}
-
+#car,
 #seat {
     background-color: #F1F1F1;
 }
 
 #choose {
+    width: 94.28px;
+    height: 30.91px;
+    border-radius: 10.3px;
+    border: none;
     background-color: #736E6E;
+    font-size: 15.46px;
+    color: white;
 }
 
 #call {
+    width: 94.28px;
+    height: 30.91px;
+    border-radius: 10.3px;
+    border: none;
     background-color: #888888;
+    font-size: 15.46px;
+    color: white;
+    margin-left: 5.5rem;
 }
 
-#available-car-five {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 100px;
-}
 
