@@ -21,10 +21,10 @@
         </div>
         <div class="buttons">
             <a href="index.html" id="new-booking">NY BOKNING</a>
-            <a href="test.html">PÅGÅENDE KÖRNINGAR</a>
-            <a href="test.html">FÖRARE</a>
-            <a href="test.html">TIDIGARE BOKNINGAR</a>
-            <a href="test.html">TRAFIKINFO</a>
+            <a href="index.html">PÅGÅENDE KÖRNINGAR</a>
+            <a href="index.html">FÖRARE</a>
+            <a href="index.html">TIDIGARE BOKNINGAR</a>
+            <a href="index.html">TRAFIKINFO</a>
         </div>
     </nav>
     <main id="main-content">
@@ -32,6 +32,7 @@
         <!-- Left side form -->
         <div id="form-container">
             <div id="customer-information-container">
+                <img id="telephone-icon" src="assets/telephone_icon.png" alt="Telephone">
                 <h2>Kundinformation</h2>
                 <label for="firstName">Förnamn</label>
                 <input type="text" id="firstName" name="förnamn" placeholder="Erik">
@@ -39,7 +40,7 @@
                 <input type="text" id="surname" name="efternamn" placeholder="Lundgren">
 
                 <label for="phoneNumber">Telefonnummer</label>
-                <input type="text" id="phone" name="telefonnummer" placeholder="+46733487677">
+                <input type="text" id="phoneNumber" name="telefonnummer" placeholder="+46733487677">
                 <label for="ovrigt">Övrigt</label>
                 <input type="text" id="ovrigt">
             </div>
@@ -74,14 +75,12 @@
                 </div>
 
                 <div id="select-container">
-                    <label for="num-of-customers"></label>
                     <select name="num-of-customers" id="num-of-customers">
                         <option value="" disabled selected>&nbsp;&nbsp;Antal</option>
                         <option value="1">&nbsp;&nbsp;1-4</option>
                         <option value="2">&nbsp;&nbsp;5-8</option>
                     </select>
 
-                    <label for="car-type"></label>
                     <select name="car-type" id="car-type">
                         <option value="biltyp">&nbsp;&nbsp;Biltyp</option>
                         <option value="minibuss">&nbsp;&nbsp;Minibuss</option>
@@ -118,13 +117,9 @@
             </div>
         </div>
 
-
-
-        </div>
-
         <!-- Image of the map -->
         <div id="map-container">
-            <img src="assets/map_img.png" alt="Image of Google map" width="550px" height="973px">
+            <img src="assets/map_img.png" alt="Google map screen shot">
         </div>
 
 
@@ -155,7 +150,7 @@
                         <select>
                             <option>Tid till upphämtning</option>
                             <option>Pris</option>
-                            <option>Blabla</option>
+                            <option>Tid till avbrott</option>
                         </select>
                     </div>
                 </div>
@@ -164,116 +159,217 @@
 
             <div id="available-cars-body-container">
 
+                <!-- First car -->
                 <div class="available-car" id="available-car-one">
                     <div>
-                        <img src="assets/green_dot.png" id="green_dot" alt="Image of a green dot">
-                        <p>Redo om: nu</p>
-                        <p>Min till upphämtning: ~ 5</p>
-                        <img src="assets/person_icon.png" alt="Image of a drawing of a person">
-                        <p>Amer Nilsson</p>
-                        <p>Tid till avbrott: 01 h 20 min</p>
-                        <p>Bil: 217</p>
-                        <img src="assets/suitcase_bold_icon.png" class="icon" alt="Suitcase icon">
-                        <img src="assets/baby_icon.png" class="icon" alt="Baby icon">
-                        <img src="assets/paw_icon.png" class="icon" alt="Paw icon">
-                        <img src="assets/wheelchair_icon.png" class="icon" alt="Wheel chair icon">
-                        <p>4 säten</p>
-                        <button>Välj</button>
-                        <button>Anropa</button>
-                    </div>
-                </div>
-
-                <div class="available-car" id="available-car-two">
-                    <div>
-                        <img src="assets/green_dot.png" id="green_dot" alt="Image of a green dot">
-                        <p>Redo om: nu</p>
-                        <p>Min till upphämtning: ~ 7</p>
-                        <img src="assets/person_icon.png" alt="Image of a drawing of a person">
-                        <p>Anna Wilsson</p>
-                        <p>Tid till avbrott: 00 h 35 min</p>
-                        <p>Bil: 156</p>
-                        <img src="assets/suitcase_bold_icon.png" class="icon" alt="Suitcase icon">
-                        <img src="assets/baby_icon.png" class="icon" alt="Baby icon">
-                        <img src="assets/paw_icon.png" class="icon" alt="Paw icon">
-                        <img src="assets/wheelchair_icon.png" class="icon" alt="Wheel chair icon">
-                        <p>4 säten</p>
-                        <button>Välj</button>
-                        <button>Anropa</button>
-                    </div>
-                </div>
-
-                <div class="available-car" id="available-car-three">
-                    <div>
-                        <img src="assets/green_dot.png" id="green_dot" alt="Image of a green dot">
-                        <p>Redo om: 5</p>
-                        <p>Min till upphämtning: ~ 11</p>
-                        <img src="assets/person_icon.png" alt="Image of a drawing of a person">
-                        <p>John Killson</p>
-                        <p>Tid till avbrott: 01 h 40 min</p>
-                        <p>Bil: 027</p>
-                        <img src="assets/suitcase_bold_icon.png" class="icon" alt="Suitcase icon">
-                        <img src="assets/baby_icon.png" class="icon" alt="Baby icon">
-                        <img src="assets/paw_icon.png" class="icon" alt="Paw icon">
-                        <img src="assets/wheelchair_icon.png" class="icon" alt="Wheel chair icon">
-                        <p>6 säten</p>
-                        <button>Välj</button>
-                        <button>Anropa</button>
-                    </div>
-                </div>
-
-                <div class="available-car" id="available-car-four">
-                    <div>
-                        <img src="assets/red_dot.png" id="red_dot" alt="Image of a red dot">
-                        <p>Redo om: 7</p>
-                        <p>Min till upphämtning: ~ 16</p>
-                        <img src="assets/person_icon.png" alt="Image of a drawing of a person">
-                        <p>Konny Hilson</p>
-                        <p>Tid till avbrott: 00 h 15 min</p>
-                        <p>Bil: 167</p>
-                        <img src="assets/suitcase_bold_icon.png" class="icon" alt="Suitcase icon">
-                        <img src="assets/baby_icon.png" class="icon" alt="Baby icon">
-                        <img src="assets/paw_icon.png" class="icon" alt="Paw icon">
-                        <img src="assets/wheelchair_icon.png" class="icon" alt="Wheel chair icon">
-                        <p>4 säten</p>
-                        <button>Välj</button>
-                        <button>Anropa</button>
-                    </div>
-                </div>
-
-                <div class="available-car" id="available-car-five">
-                    <div>
                         <div class="top-row">
-                            <img src="assets/orange_dot.png" id="orange_dot" alt="Image of a orange dot">
-                            <p id="ready">Redo om: 15</p>
-                            <p id="pickup">Min till upphämtning: ~ 19</p>
+                            <img src="assets/green_dot.png" class="green_dot" alt="A green dot">
+                            <p class="ready">Redo om: nu</p>
+                            <p class="pickup">Min till upphämtning: ~ 5</p>
                         </div>
 
                         <div class="second-row">
-                            <img src="assets/person_icon.png" id="person" alt="Image of a drawing of a person">
-                            <p id="driver">Sonja Gillison</p>
-                            <p id="break">Tid till avbrott: 02 h 30 min</p>
-                            <button id="choose">Välj</button>
+                            <div class="second-row-text">
+                                <img src="assets/person_icon.png" alt="A drawing of a person">
+                                <p class="driver">Amer Nilsson</p>
+                                <p class="break">Tid till avbrott: 01 h 20 min</p>
+                            </div>
+                            <button class="choose-button">Välj</button>
+                        </div>
+                    </div>
+                    <div class="third-row">
+                        <div class="third-row-icons">
+                            <p class="car">Bil: 217</p>
+                            <img id="first-car-suitcase" src="assets/suitcase_bold_icon.png" class="icon"
+                                alt="Suitcase icon">
+                            <img id="first-car-baby" src="assets/baby_icon.png" class="icon" alt="Baby icon">
+                            <img id="first-car-paw" src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                            <img id="first-car-wheelchair" src="assets/wheelchair_icon.png" class="icon"
+                                alt="Wheel chair icon">
+                            <p class="seat">4 säten</p>
                         </div>
 
-                        <div class="third-row">
-                            <p id="car">Bil: 113</p>
-                            <img src="assets/suitcase_bold_icon.png" class="icon" alt="Suitcase icon">
-                            <img src="assets/baby_icon.png" class="icon" alt="Baby icon">
-                            <img src="assets/paw_icon.png" class="icon" alt="Paw icon">
-                            <img src="assets/wheelchair_icon.png" class="icon" alt="Wheel chair icon">
-                            <p id="seat">6 säten</p>
-                            <button id="call">Anropa</button>
-                        </div>
-
-                
+                        <button class="call">Anropa</button>
                     </div>
                 </div>
 
+                <!-- Second car -->
+                <div class="available-car" id="available-car-two">
+                    <div>
+                        <div class="top-row">
+                            <img src="assets/green_dot.png" class="green_dot" alt="A green dot">
+                            <p class="ready">Redo om: nu</p>
+                            <p class="pickup">Min till upphämtning: ~ 7</p>
+                        </div>
+
+                        <div class="second-row">
+                            <div class="second-row-text">
+                                <img src="assets/person_icon.png" alt="A drawing of a person">
+                                <p class="driver">Anna Wilsson</p>
+                                <p class="break">Tid till avbrott: 00 h 35 min</p>
+                            </div>
+                            <button class="choose-button">Välj</button>
+                        </div>
+
+                        <div class="third-row">
+                            <div class="third-row-icons">
+                                <p class="car">Bil: 156</p>
+                                <img id="second-car-suitcase" src="assets/suitcase_bold_icon.png" class="icon"
+                                    alt="Suitcase icon">
+                                <img id="second-car-baby" src="assets/baby_icon.png" class="icon" alt="Baby icon">
+                                <img id="second-car-paw" src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                                <img id="second-car-wheelchair" src="assets/wheelchair_icon.png" class="icon"
+                                    alt="Wheel chair icon">
+
+
+
+                                <p class="seat">4 säten</p>
+                            </div>
+                            <button class="call">Anropa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third car -->
+                <div class="available-car" id="available-car-three">
+                    <div>
+                        <div class="top-row">
+                            <img src="assets/green_dot.png" class="green_dot" alt="A green dot">
+                            <p class="ready">Redo om: 5</p>
+                            <p class="pickup">Min till upphämtning: ~ 11</p>
+                        </div>
+
+                        <div class="second-row">
+                            <div class="second-row-text">
+                                <img src="assets/person_icon.png" alt="A drawing of a person">
+                                <p class="driver">John Killson</p>
+                                <p class="break">Tid till avbrott: 01 h 40 min</p>
+                            </div>
+                            <button class="choose-button">Välj</button>
+                        </div>
+
+                        <div class="third-row">
+                            <div class="third-row-icons">
+                                <p class="car">Bil: 027</p>
+                                <img id="third-car-suitcase" src="assets/suitcase_bold_icon.png" class="icon"
+                                    alt="Suitcase icon">
+                                <img id="third-car-baby" src="assets/baby_icon.png" class="icon" alt="Baby icon">
+
+                                <img id="third-car-paw" src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                                <img id="third-car-wheelchair" src="assets/wheelchair_icon.png" class="icon"
+                                    alt="Wheel chair icon">
+                                <p class="seat">6 säten</p>
+                            </div>
+                            <button class="call">Anropa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth car -->
+                <div class="available-car" id="available-car-four">
+                    <div>
+                        <div class="top-row">
+                            <img src="assets/red_dot.png" class="red_dot" alt="A red dot">
+                            <p class="ready">Redo om: 7</p>
+                            <p class="pickup">Min till upphämtning: ~ 16</p>
+                        </div>
+
+                        <div class="second-row">
+                            <div class="second-row-text">
+                                <img src="assets/person_icon.png" alt="A drawing of a person">
+                                <p class="driver">Konny Hilson</p>
+                                <p class="break">Tid till avbrott: 00 h 15 min</p>
+                            </div>
+                            <button class="choose-button">Välj</button>
+                        </div>
+
+                        <div class="third-row">
+                            <div class="third-row-icons">
+                                <p class="car">Bil: 167</p>
+                                <img id="fourth-car-suitcase" src="assets/suitcase_bold_icon.png" class="icon"
+                                    alt="Suitcase icon">
+                                <img id="fourth-car-baby" src="assets/baby_icon.png" class="icon" alt="Baby icon">
+                                <img id="fourth-car-paw" src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                                <img id="fourth-car-wheelchair" src="assets/wheelchair_icon.png" class="icon"
+                                    alt="Wheel chair icon">
+                                <p class="seat">4 säten</p>
+                            </div>
+                            <button class="call">Anropa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fifth car -->
+                <div class="available-car" id="available-car-five">
+                    <div>
+                        <div class="top-row">
+                            <img src="assets/orange_dot.png" class="orange_dot" alt="An orange dot">
+                            <p class="ready" id="ready">Redo om: 15</p>
+                            <p class="pickup" id="pickup">Min till upphämtning: ~ 19</p>
+                        </div>
+
+                        <div class="second-row">
+                            <div class="second-row-text">
+                                <img src="assets/person_icon.png" id="person" alt="A drawing of a person">
+                                <p class="driver" id="driver">Sonja Gillison</p>
+                                <p class="break" id="break">Tid till avbrott: 02 h 30 min</p>
+                            </div>
+                            <button class="choose-button" id="choose">Välj</button>
+                        </div>
+
+                        <div class="third-row">
+                            <div class="third-row-icons">
+                                <p class="car" id="car">Bil: 113</p>
+                                <img id="fifth-car-suitcase" src="assets/suitcase_bold_icon.png" class="icon
+                                   " alt="Suitcase icon">
+                                <img id="fifth-car-baby" src="assets/baby_icon.png" class="icon" alt="Baby icon">
+                                <img id="fifth-car-paw" src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                                <img id="fifth-car-wheelchair" src="assets/wheelchair_icon.png" class="icon"
+                                    alt="Wheel chair icon">
+                                <p class="seat" id="seat">6 säten</p>
+                            </div>
+                            <button class="call" id="call">Anropa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Sixth car-->
+                <div class="available-car" id="available-car-six">
+                    <div>
+                        <div class="top-row">
+                            <img src="assets/orange_dot.png" class="orange_dot" alt="An orange dot">
+                            <p class="ready">Redo om: 17</p>
+                            <p class="pickup">Min till upphämtning: ~ 32</p>
+                        </div>
+
+                        <div class="second-row">
+                            <div class="second-row-text">
+                                <img src="assets/person_icon.png" alt="A drawing of a person">
+                                <p class="driver">Shirin Crilison</p>
+                                <p class="break">Tid till avbrott: 02 h 45 min</p>
+                            </div>
+                            <button class="choose-button">Välj</button>
+                        </div>
+
+                                       
+                        <div class=" third-row">
+                                <div class="third-row-icons">
+                                    <p class="car">Bil: 115</p>
+
+                                    <img id="sixth-car-suitcase" src="assets/suitcase_bold_icon.png" class="icon"
+                                        alt="Suitcase icon">
+                                    <img id="sixth-car-baby" src="assets/baby_icon.png" class="icon" alt="Baby icon">
+                                    <img id="sixth-car-paw" src="assets/paw_icon.png" class="icon" alt="Paw icon">
+                                    <img id="sixth-car-wheelchair" src="assets/wheelchair_icon.png" class="icon"
+                                        alt="Wheel chair icon">
+                                    <p class="seat">6 säten</p>
+                                </div>
+                                <button class="call">Anropa</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-
-
     </main>
 
 </body>
