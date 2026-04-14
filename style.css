@@ -214,6 +214,10 @@ input::placeholder {
     opacity: 50%;
 }
 
+#baby_icon {
+    opacity: 100%;
+}
+
 .icon-button:hover {
     opacity: 100%;
 }
